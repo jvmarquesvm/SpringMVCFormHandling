@@ -1,2 +1,6 @@
 7. Criando um projeto SpringMVC
  - Passando um Form Handling de um Controller para uma View no SpringMVC
+ - Observar que no form a diretiva commandName não é mais utilizada( causa o erro "/WEB-INF/views/account/index.jsp (line: [13], column: [1]) Unable to find setter method for attribute: [commandName]", 
+ sendo obrigatório mudar para modelAttribute="account".( index.jsp - atributos do form)
+ - Observar para não utilizar o componente checkbox no lugar do checkboxes, caso contrário será requerido um atributo value="" que não irá fazer sentido, 
+ pois o valor ficar fixo, não respeitando a escolha do usuário.
